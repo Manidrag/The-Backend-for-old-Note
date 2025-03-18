@@ -3,7 +3,9 @@
 
 const mongoose = require('mongoose');
 const { buffer } = require('stream/consumers');
+require('dotenv').config();
 const Schema = mongoose.Schema;
+
 
 mongoose.connect(process.env.THEMONGO, {
   useNewUrlParser: true,
