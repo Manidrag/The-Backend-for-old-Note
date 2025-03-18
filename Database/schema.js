@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const { buffer } = require('stream/consumers');
 const Schema = mongoose.Schema;
 
-mongoose.connect('mongodb+srv://mani:yUo5tEJNJqFmfLl5@cluster0.93ngq.mongodb.net/The_Note', {
+mongoose.connect(process.env.THEMONGO, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => {
